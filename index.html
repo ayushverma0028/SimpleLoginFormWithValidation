@@ -1,0 +1,192 @@
+<DOCTYPE html>
+<html>
+    <head>
+    <title>Welcome Page</title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/e8daac6d65.js"
+      crossorigin="anonymous">
+		</script>
+		<style>
+        div{
+            width:270px;
+            height:250px;
+            background:rgba(0,0,0,0.1);
+            border: 1px solid grey;
+            border-radius: 0px 10px 0px 10px;
+            margin:30px 485px;
+            padding:2px;
+			position: relative;
+        }
+        input{
+            border-radius:8px;
+            margin:1px;
+            padding;1px;
+            width: 230px;
+            height: 25px;
+        }
+        body{
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg");
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+		    background-size: cover;
+        }
+nav{
+    width: 100%;
+    height:30px;
+    border:1px solid grey; 
+    background:rgba(0,0,0,0.1);
+    border-radius: 10px 0px 10px 0px;
+    margin: 1px;
+    padding: 2px;
+    text-align: center;
+	justify-content: center;
+}
+nav a{
+    padding-right: 15px;
+    font-size: 22;
+    text-decoration: none;
+    color:black;
+}
+nav a:hover{
+    color:blue;
+    font-size: 25;
+}
+		.active{
+				color: Blue;
+				font-size: 22px;
+			}
+h1{
+    text-align: center;
+    color:darkblue;
+	font-family: 'Sansita Swashed', cursive;
+}
+h3{
+    text-align: center;
+    color:darkblue;
+	margin: 10px;
+}
+i{
+	margin: 5px;
+	padding: 1px;
+}
+.anch{
+ font-size:15px;
+    text-decoration: underline;
+    padding: 5px;
+	margin: 5px;
+	color: darkblue;
+}
+.anch:hover{
+    color:blue;
+}
+#log{
+	font-size: 15px;
+	margin: 0px 10px;
+	width: 250px;
+	padding: 2px;
+	border-radius: 7px;
+    background-color: green;
+}
+#log:hover{
+ background-color: darkgray;
+}
+.textbox{
+    
+    overflow: hidden;
+    font-size: 20px;
+    cursor:pointer;
+}
+.textbox .a1{
+    border: none;
+    background: none;
+    color: white;
+    border-bottom: 1px solid #fff;
+	padding: 10px;
+}
+label{
+    color: white;
+}
+::placeholder{
+	color: lightgrey;
+	padding-left: 1px;
+}
+			.btn{
+				margin: 5px;
+				float: right;
+				background-color: greenyellow;
+				color: white;
+				border: green;
+				border-radius: 5px;
+				text-decoration: none;
+				text-transform: capitalize;
+				font-size: 20px;
+				padding: 5px;
+			}
+
+			@media screen and (max-width: 700px)
+		{
+		div{
+            width:290px;
+            height:280px;
+            background:rgba(0,0,0,0.1);
+            border: 1px solid grey;
+            border-radius: 0px 10px 0px 10px;
+            margin:30px 40px;
+            padding:2px;
+			position: relative;
+        }	
+			h1{
+				font-size: 25px;
+				text-align: center;
+			}
+			nav{
+				width: auto;
+			}
+			nav a{
+/*					padding-right: 15px;*/
+				float: left;
+					font-size: 20;
+					text-decoration: none;
+					color:black;
+			}
+			.btn{
+				margin: 5px 20px;
+				background-color: greenyellow;
+				color: white;
+				border: green;
+				border-radius: 5px;
+				text-decoration: none;
+				padding: 5px;
+				font-size: 18px;
+			}
+		}
+</style>
+    </head>
+    <body>
+        
+        <form>
+			<h1>Welcome To My Login Page</h1>
+			<br>
+            <nav>
+			<a href="#" style="float: left" class="active"><i class="fa fa-home" area-hidden="true"></i></a>
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+			</nav>
+			<button class="btn" style="float:right">Sign Up</button><br>
+            <div class="textbox">
+				<h3>Login here</h3>
+				<i class="fa fa-user" area-hidden="true"></i><input type="email" class="a1" required title="please enter an address like this:abc@gmail.com" placeholder="Enter your email here"/>
+				<br><br>
+            	<i class="fa fa-lock" aria-hidden="true"></i><input type="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[1-9])(?=.*[@]).{8,10}" title="Password must be between 8 to 10 char in length and starting with capital letters and then lower case with numeric value and special symbols" placeholder="Enter your password" class="a1"/><br><br>
+				<input type="submit" value="Login" id="log"><br><br>
+            <a href="#" class="anch" style="float: left">Forgot Password?</a>
+<a href="#" class="anch" style="float: right">Create Account</a>
+            </div>
+        </form>
+	</body>
+	</html>
